@@ -19,10 +19,8 @@ body{
 }
 
 .first{
-    width: 460px;
-    height: 240px;
     flex: 50%;
-    /* padding-right: 150px; */
+    padding-right: 3.2rem;
 }
 
 .first > p{
@@ -152,6 +150,15 @@ span{
 
 @media only screen and (max-width: 1295px) {
     /* For tablets: */
+    body{
+        padding: 60px 130px;
+    }
+    .container{
+        margin-top: 2rem;
+    }
+    .first{
+        padding-right: 2rem;
+    }
     .button1{
         margin-right: 70px;
         text-align: center;
@@ -178,14 +185,25 @@ span{
     }
 }
 @media only screen and (max-width: 1132px) {
+    body{
+        padding: 40px 110px;
+    }
     .container > .card1,.card2,.card3{
         height: 200px;
     }
+
 }
 @media only screen and (max-width: 1054px) {
+    body{
+        padding: 20px 90px;
+    }
     .container > .card1,.card2,.card3{
         height: 230px;
     }
+    .container{
+        margin-top: 1rem;
+    }
+    
 }
 
 @media only screen and (max-width: 1002px) {
