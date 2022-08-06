@@ -1,0 +1,244 @@
+/* Fondo */
+html{
+    background: url(./images/bg-pattern-top-desktop.svg) fixed, url(./images/bg-pattern-bottom-desktop.svg) fixed right bottom;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 40%,75%;
+}
+
+body{
+    padding: 80px 150px;
+    font: 15px ;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* First Part */
+
+.top{
+    display: flex;
+    flex-direction: row;
+}
+
+.first{
+    width: 460px;
+    height: 240px;
+    flex: 50%;
+    /* padding-right: 150px; */
+}
+
+.first > p{
+    padding-right: 100px;
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    padding-right: 150px;
+    margin-bottom: 0;
+}
+.text-btn{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.starts{
+    padding: 2px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    margin-top: 80px;
+    padding-right: 20px;
+}
+
+.second > div {
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom:10px;
+    padding: 20px 25px 20px 30px;
+    border-radius: 10px;
+    font-size: 100;
+    font-weight: 700;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.container > .card1,.card2,.card3{
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    text-align: center;
+    margin: 20px 20px 20px 0px;
+    border-radius: 10px;
+    padding: 30px;
+    height: 170px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* Imagenes */
+
+.person{
+    /* padding-top: 10px; */
+    width: 46px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+.name > p{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+span{
+    color: hsl(333, 80%, 67%);
+}
+
+/* start */
+
+
+.button1,.button2,.button3{
+    color: hsl(300, 43%, 22%);
+    display: flex;
+    flex-wrap:wrap ;
+}
+.button1{
+    margin-right: 90px;
+}
+.button2{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.button3{
+    margin-left: 80px;
+    /* margin-right: 40px; */
+}
+.card1{
+    flex: 33%;
+}
+.card2{
+    margin-top: 40px;
+    flex: 33%;
+}
+.card3{
+    margin-top: 60px;
+    flex: 33%;
+}
+
+.text-container{
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.3;
+
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 1305px) {
+    /* For tablets: */
+    h1{
+        font-size: 50px;
+        padding-right: 60px;
+    }
+}
+
+@media only screen and (max-width: 1295px) {
+    /* For tablets: */
+    .button1{
+        margin-right: 70px;
+        text-align: center;
+    }
+    .button2{
+        /* margin-right: 100px; */
+        text-align: center;
+    }
+    .button3{
+        margin: 0;
+        text-align: center;
+        margin-left: 90px;
+    }
+    .button1,.button2,.button3{
+        color: hsl(300, 43%, 22%);
+        display: block;
+    }
+    .text-btn{
+        padding: 0;
+        margin-top: 5px;
+    }
+    .container > .card1,.card2,.card3{
+        height: 180px;
+    }
+}
+@media only screen and (max-width: 1132px) {
+    .container > .card1,.card2,.card3{
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 1054px) {
+    .container > .card1,.card2,.card3{
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 1002px) {
+    html{
+        background: url(./images/bg-pattern-top-mobile.svg) fixed, url(./images/bg-pattern-bottom-mobile.svg) fixed right bottom;
+        background-repeat: no-repeat,no-repeat;
+        background-size: 40%,40%;
+    }
+    body{
+        /* display: none; */
+        padding: 0px 0px 0px 0px;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .first > p{
+        padding-right: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container > .card1,.card2,.card3{
+        height: 230px;
+        width: 72%;
+        margin: 0px 0px 20px 0px;
+    }
+    .first{
+        width: auto;
+        height: auto;
+        flex: 100%;
+        width: 80%;
+        /* padding-right: 150px; */
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+        margin-top: auto;
+        padding-right: 0px;
+        width: 80%;
+    }
+    .button1,.button2,.button3{
+        margin: 0px 0px 0px 0px;
+    }
+}
