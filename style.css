@@ -71,7 +71,6 @@ h1{
 .container > .card1,.card2,.card3{
     background-color: hsl(300, 43%, 22%);
     color: white;
-    text-align: center;
     margin: 20px 20px 20px 0px;
     border-radius: 10px;
     padding: 30px;
@@ -242,11 +241,9 @@ span{
         margin: 0px 0px 20px 0px;
     }
     .first{
-        width: auto;
-        height: auto;
         flex: 100%;
         width: 80%;
-        padding-right:0px;
+        padding-right: 0px;
         /* padding-right: 150px; */
     }
     .second{
