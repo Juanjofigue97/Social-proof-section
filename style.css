@@ -246,6 +246,7 @@ span{
         height: auto;
         flex: 100%;
         width: 80%;
+        padding-right:0px;
         /* padding-right: 150px; */
     }
     .second{
